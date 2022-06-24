@@ -13,12 +13,9 @@ git config --global --edit
 	count = !git shortlog -s --grep
 [push]
 	followTags = true
-## Setar parametros commit
+## Setar parametros commit manualmente
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-
-
-
 
 ## Inicializar git
 git init
