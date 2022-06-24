@@ -1,3 +1,19 @@
+## Tornar o VsCode o Editor das configurações do git
+git config --global core.editor code
+## Abrir as configurações no git no editor
+git config --global --edit
+
+## Adições interessantes
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	t = !sh -c 'git tag -a $1 -m $1' -
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s --grep
+[push]
+	followTags = true
+
 ## Inicializar git
 git init
 ## Setar repositório remoto
