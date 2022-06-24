@@ -13,6 +13,10 @@ git config --global --edit
 	count = !git shortlog -s --grep
 [push]
 	followTags = true
+## Setar parametros commit
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
 
 ## Inicializar git
 git init
@@ -47,6 +51,3 @@ git stash list
 git stash pop [index]
 ## Limpar stash
 git stash clear
-## Setar parametros commit
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
