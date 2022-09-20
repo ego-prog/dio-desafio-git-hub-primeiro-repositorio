@@ -1,6 +1,9 @@
 ## Tornar o VsCode o Editor das configurações do git
 git config --global core.editor code
 ## Abrir as configurações no git no editor
+global = Qualquer projeto do usuário
+local = somente para o projeto
+system = qualquer projeto e/ou usuário
 git config --global --edit
 
 ## Adições interessantes
